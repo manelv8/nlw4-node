@@ -5,3 +5,17 @@ yarn add typescript -D
 yarn tsc --init
   change to strict: false
 yarn add ts-node-dev -D
+
+#dia 2
+yarn add typeorm reflect-metadata
+yarn add sqlite3
+add file ormconfig.json
+imports no server.ts
+
+config "typeorm" script no package.json
+
+yarn typeorm migration:create -n CreateUser
+
+yarn typeorm migration:run
+
+yarn add @types/uuid -D
